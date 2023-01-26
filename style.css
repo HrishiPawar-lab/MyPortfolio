@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    min-height: 100vh;
+    /* overflow: hidden; */
+    /* background:linear-gradient(rgba(0, 128, 128, 0.714),rgba(255, 255, 255, 0.303)); */
+    background: url("https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?w=1380&t=st=1674708358~exp=1674708958~hmac=6244e315047b2f3c29a982a5a43774e978e16108cea349f614cfa31749e6a2d1")no-repeat center center/cover;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    padding: 25px 0;
+    width: 200px;
+    min-height: 100vh;
+    background-color: #7788992e;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sidebar li {
+    list-style: none;
+    margin: 21px 25px;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: teal;
+    font-size: 20px;
+    transition: 0.7s ease;
+}
+
+.sidebar li a:hover {
+    color: whitesmoke
+}
+
+.main-container {
+    width: 800px;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    text-align: left;
+}
+
+
+.info h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: teal;
+}
+
+
+.info h3 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.btn {
+    padding: 8px 20px;
+    margin: 15px 0px;
+    background-color: darkcyan;
+    color: white;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: 0.8s ease;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 140px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: darkcyan;
+}
+
+.contactContainer {
+    position: relative;
+    height: auto;
+    left: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contactheading {
+    font-size: 2.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: left;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    right: 140px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.contactForm input {
+
+    width: 70%;
+    outline: none;
+    padding: 5px 0;
+    border: none;
+    background: none;
+    border-bottom: 1px solid teal;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.contactForm label {
+    font-size: 22px;
+    margin: 10px 0px;
+
+    margin-top: 10px;
+    text-align: left;
+
+}
+
+::placeholder {
+    font-size: 16px,
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-proper {
+    width: 40%;
+    margin-top: 30px;
+}
+
+
+.blogItem {
+    margin: 10px 0;
+}
+
+.blogItem h2 {
+    line-height: 1.3;
+    color: teal
+}
+
+.blog {
+    top: 100px;
+
+}
+
+.blogItem p {
+    font-size: 20px;
+    line-height: 1.2;
+    font-style: italic;
+}
+
+.blogItem button {
+    margin-top: 15px;
+}
+
+.about {
+    font-size: 3rem;
+    color: teal;
+}
+
+.fifty {
+    background-color: teal;
+    width: 285px;
+    height: 11px;
+    transition: ease;
+    animation-name: fill;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fill {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 170px;
+    }
+}
+
+.hundred {
+    background-color: teal;
+    width: 285px;
+    height: 11px;
+    animation-name: fillHundred;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fillHundred {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 265px;
+    }
+}
+
+.seventy {
+    background-color: teal;
+    width: 200px;
+    height: 11px;
+    animation-name: fillSeventy;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fillSeventy {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 200px;
+    }
+}
+
+.fullPercent {
+    border: 2px solid teal;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 10px;
+}
+
+.socials {
+    display: flex;
+    margin: 10px 0;
+}
+
+.socials i {
+    padding: 10px 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.socials i:hover {
+    color: teal
+}
+
+.anotherContainer {
+
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    margin: 0 auto;
+    height: 500px;
+    position: relative;
+    top: 100px;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.skill {
+    background-color: teal;
+    width: 10px;
+    height: 10px;
+}
+
+.blog-container {
+    width: 800px;
+    margin: 0 auto;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogItemContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blogItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+.blogItem img:hover {
+    transform: scale(1.02);
+    transition: 1s ease;
+}
+
+.skillContainer {
+    position: relative;
+    left: 10px;
+}
+
+.skillContainer h2 {
+    color: teal;
+    font-size: 25px;
+}
+
+.sidebar {
+    transform: translate(-203px, 10px);
+    transition: 0.6s ease-in-out;
+}
+
+.toggle {
+    position: absolute;
+    width: 200px;
+    transition: 0.8s ease-in-out;
+    margin: 5px;
+    border: none;
+    outline: none;
+    padding-top: 5px;
+    background-color: #77889900;
+    cursor: pointer;
+}
+
+.fa-bars {
+    display: block;
+    font-size: 35px;
+    position: relative;
+    left: 15px;
+    color: teal;
+    transition: 0.4s ease;
+}
+
+.fa-xmark {
+    visibility: hidden;
+    position: relative;
+    left: 130px;
+    font-size: 40px;
+    color: teal;
+    transition: 0.4s ease;
+}
+
+footer {
+    /* position: absolute;
+    bottom: 0px; */
+    font-size: 20px;
+    text-align: center;
+    display: blononeck;
+    width: 100%;
+}
+
+.blogHeading {
+    color: teal;
+}
+
+.socials a {
+    color: black;
+}
+
+.image img {
+    width: 11%;
+    border: none;
+    position: absolute;
+    top: 250px;
+    left: 1100px;
+    box-shadow: 2px 2px 12px grey;
+    padding: 20px;
+}
+p{
+    color: rgba(24, 22, 22, 0.589);
+}

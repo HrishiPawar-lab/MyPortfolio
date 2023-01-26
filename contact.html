@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <title>Personal Portfolio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div >
+            <ul class="sidebar"> 
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="blogs.html">My Projects</a></li>
+                <li><a href="intro.html">Introduction</a></li>
+                <li><a href="Hrishikesh Resume.pdf" target="_blank"> Download Resume</a></li>   
+                <li><a href="contact.html"> Contact Me</a></li>
+            </ul>
+        </div>
+        <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+
+        </div>
+        <div class="contactContainer">
+            <h2 class="contactheading"> Contact me for work and general queries</h2>
+            <form action="/contact" class="contactForm" method="post">
+                <label for="clientname" class="label">Enter your Name here</label>
+                <input type="text" id="clientname" class="input" name="name" placeholder="Name">
+                <label for="clientEmail" class="label">Enter your email</label>
+                <input type="email" id="clientEmail" class="input-mid" name="email" placeholder="Email">
+                <label for="clientname" class="label">Enter your phone here</label>
+                <input type="phone" id="clientPhone" class="input" name="phone" placeholder="Phone"> 
+                <button type="submit" class="btn btn-proper">Submit</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        Copyright &copy; HrishikeshPawar 2023
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

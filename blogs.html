@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <title>Personal Portfolio</title>
+    <style>
+        .projects {
+            width: 1000px;
+            margin: 100px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .project img {
+            width: 800px;
+            height: 400px;
+            margin: 15px auto;
+            box-shadow: 8px 8px 15px grey;
+            transition: 1s ease;
+        }
+
+        .project img:hover {
+            transform: scale(1.02);
+        }
+
+        .projects h1 {
+            font-size: 3rem;
+            color: teal;
+            text-shadow: 2px 2px 5px white;
+        }
+
+        .projects h2 {
+            font-size: 2rem;
+            line-height: 1.5;
+            color: teal;
+            text-decoration: underline;
+        }
+
+        .project {
+            margin: 20px 0;
+            width: 100%;
+
+        }
+
+        .project p {
+            font-size: 22px;
+            color: rgba(24, 22, 22, 0.589);
+        }
+
+        .project
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <ul class="sidebar">
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="intro.html">Introduction</a></li>
+                <li><a href="Hrishikesh Resume.pdf" target="_blank"> Download Resume</a></li>
+                <li><a href="contact.html"> Contact Me</a></li>
+                <li><a href="blogs.html">My Projects</a></li>
+
+            </ul>
+        </div>
+        <div class="toggle">
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-sharp fa-solid fa-xmark"></i>
+        </div>
+        <div class="projects">
+            <h1>My Projects</h1>
+            <div class="project">
+                <h2 class="projectname">Daily Feeds-</h2>
+                <img src="Dailyfeeds.png" alt="">
+                <p>"DailyFeeds: Developed a news app that utilizes the News API to retrieve articles and displays them
+                    in a user-friendly layout using React, React Router, Bootstrap, HTML, and CSS. Implemented search
+                    functionality and different categories such as business, sports, and entertainment in the navigation
+                    bar, allowing users to find specific articles and navigate through different sections of the app."
+                    <span>"Skills: React, React Router, HTML, CSS, JavaScript, Bootstrap, npm,News API"
+                    </span>
+                </p>
+                <a href="" role="button"> <button class="btn">Get on github</button> </a>
+            </div>
+            <div class="project">
+                <h2 class="projectname">Sticky Notes-</h2>
+                <img src="Sticky Notes.png" alt="">
+                <p>"Sticky Notes: Developed a sticky notes application using vanilla JavaScript, HTML, and CSS.
+                    Implemented features such as adding and deleting notes by double-tapping on them, with an
+                    easy and pretty UI."
+                    <span>Skills: JavaScript, HTML, CSS, User Experience (UX), User Interface (UI)
+                    </span>
+                </p>
+                <a href="" role="button"> <button class="btn">Get on github</button> </a>
+
+            </div>
+            <div class="project">
+                <h2 class="projectname">Unsplash API Image generator</h2>
+                <img src="unsplash.png" alt="">
+                <p>"Unsplash API: Developed an image generator app similar to Google Images using the Unsplash
+                    API, JavaScript, HTML, and CSS. Implemented features such as searching for images by keywords,
+                    displaying the images in a user-friendly layout, double-tapping to open the images in a new
+                    window and providing a direct link to download the images."
+                    <span>"Skills: HTML, CSS, JavaScript, Bootstrap, Unsplash API”
+                    </span>
+                </p>
+                <a href="" role="button"> <button class="btn">Get on github</button> </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Copyright &copy; HrishikeshPawar 2023
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
